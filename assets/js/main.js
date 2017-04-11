@@ -4,21 +4,31 @@
   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-          // Viewport detection
-          // I just need this to pause and play video.
-          function belowFold(element) {
-            var fold = $(window).height() + $(window).scrollTop();
-            return fold <= $(element).offset().top;
-          }
+// Viewport detection
+// I just need this to pause and play video.
+function belowFold(element) {
+  var fold = $(window).height() + $(window).scrollTop();
+  return fold <= $(element).offset().top;
+}
 
-          function aboveTop(element) {
-            var top = $(window).scrollTop();
-            return top >= $(element).offset().top + $(element).height();
-          }
+function aboveTop(element) {
+  var top = $(window).scrollTop();
+  return top >= $(element).offset().top + $(element).height();
+}
 
-          function inViewport(element) {
-            return !belowFold(element) && !aboveTop(element);
-          }
+function inViewport(element) {
+  return !belowFold(element) && !aboveTop(element);
+}
+
+// Sharing
+function twitterShare() {
+  var url = encodeURIComponent(document.location.href);
+  document.location.href="https://twitter.com/intent/tweet?via=newint&related=newint&text=Smoke+and+mirrors+cooking+in+Malawi+" + url;
+}
+function fbShare() {
+  var url = encodeURIComponent(document.location.href);
+  document.location.href="https://www.facebook.com/share.php?u=" + url;
+}
 
 (function($) {
 
