@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Malawi cooking fires</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <!--TODO: Should be included not in text of pages-->
+    <nav id="topNav">
+      <div id="logo">
+        <a href="https://newint.org"><img src="images/logo-34px.png" alt="New Internationalist" style="width:100%"/></a>
+      </div>
+      <ul>
+        <li><a href="index.html" id="navHome">Home</a></li>
+        <li><a href="womensburden.html#video-intro" id="navBurden">A woman's burden</a></li>
+        <li><a href="/" id="navKiller">Killer in the kitchen</a></li>
+        <li><a href="/" id="navCommunity">Community</a></li>
+        <li><a href="/" id="navMillionairre">The millionairre</a></li>
+        <li><a href="/" id="navGold">Black gold</a></li>
+      </ul>
+    </nav>
+
+    <!-- Wrapper -->
+      <div id="wrapper" class="divided">
+
+        <!--Video-->
+          <section class="banner style5 invert content-align-center image-position-center fullscreen onload-image-fade-in onload-content-fade-right onscroll-image-fade-left" id="video-intro">
+            <div class="image">
+              <video autoplay id="burdenVid" src="videos/burden.mp4" class="fullwidth-video" style="height:100%"></video>
+            </div>
+            <div class="content">
+              <ul class="actions" style="padding-top:75%">
+                <li><a href="#womansB" class="smooth-scroll icon fa-arrow-down" onclick='document.getElementById("intro").pause();'></a></li>
+              </ul>
+            </div>
+          </section>
+
+        <!-- Burden -->
+          <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="burden">
+            <div class="content">
+              <h2>A woman&#8217;s burden</h2>
+              <p>Chief Peterson Weston from Nessa Village is concerned: ‘the men of this village complain to me because the women spend more time on the mountain than before’. They are not at home to cook anymore, he says, and this is causing conflict between husband and wife.</p>
+              <p>Firewood collection for cooking is a burden that falls on women, and keeps them away for hours each time they go out.</p>
+              <p>‘Whether you like it or not – you have to make sure that food is available for your husband’, says Vanessa Chirwa, from Pitala village in Nkhata-Bay district. Like millions other women in the Malawi, Vanessa cooks for her family on the traditional three-stone fire.</p>
+              <p>Rose Kagaso, her daughter Maggie and the other women from Chikwawa are out collecting firewood for two hours each day. ‘Down by the river’, they say, ‘it is dangerous, the crocodiles are on the hunt there’. By ‘crocodile’ they refer not only to the amphibious species, but also to human predators. Due to stigma those who come home bleeding talk about the crocodile.</p>
+              <p>Sometimes, even 10-year-old girls become responsible for households energy needs – a full time job that needs to be balanced with education, and often child care of siblings.  Collecting the wood, hauling water, growing food and cooking it takes all their time. Each meal of the day must be freshly cooked – a whole lot of work with no electricity available.</p> 
+              <p>While firewood becomes scarcer and scarcer, the burden of wood collection has even increased. Charity Gogoda from a village close to the Lujeri Tea Plantation in Mulanje confirms: ‘A bundle of firewood lasts only a few days, and then we have to go out again’. And every year Charity and her friends have to walk</p>
+              <ul class="actions vertical">
+                <li><a href="javascript:back(-1)" class="smooth-scroll icon fa-arrow-down"></a></li>
+              </ul>
+            </div>
+            <div class="image">
+              <img src="images/firewood.jpg" alt="Firewood is also sold in urban centres, like here around Mulanje" />
+            </div>
+          </section>
+
+        <!-- Footer -->
+          <footer class="wrapper style1 align-center">
+            <div class="inner">
+              <ul class="icons">
+                <li><a href="https://twitter.com/newint" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.facebook.com/newint" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+              </ul>
+              <p>&copy; 2017 New Internationalist.
+                 Except where otherwise noted, content on this site
+                 is <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/" title="Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 License">licensed</a> 
+                 under a Creative Commons BY-NC-ND 3 Licence. Template: <a href="https://html5up.net">HTML5 UP</a>.</p>
+            </div>
+          </footer>
+
+      </div>
+
+    <!-- Scripts TODO Should be include not in page-->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script>
+        $(function() {
+          $('#navBurden').addClass("selected");
+          $(document).on( 'scroll', function() {
+            if(inViewport($("#burdenVid")[0])) {
+              $("#burdenVid")[0].play();
+            }
+            else {
+              $("#burdenVid")[0].pause();
+            }
+          });
+        });
+      </script>
+
+  </body>
+</html>
