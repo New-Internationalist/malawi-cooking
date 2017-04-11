@@ -7,21 +7,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <!--TODO: Should be included not in text of pages-->
-    <nav id="topNav">
-      <div id="logo">
-        <a href="https://newint.org"><img src="images/logo-34px.png" alt="New Internationalist" style="width:100%"/></a>
-      </div>
-      <ul>
-        <li><a href="index.html" id="navHome">Home</a></li>
-        <li><a href="womensburden.html#video-intro" id="navBurden">A woman's burden</a></li>
-        <li><a href="killerKitchen.html" id="navKiller">Killer in the kitchen</a></li>
-        <li><a href="/" id="navCommunity">Community</a></li>
-        <li><a href="/" id="navMillionairre">The millionairre</a></li>
-        <li><a href="/" id="navGold">Black gold</a></li>
-      </ul>
-    </nav>
-
+    <!--#include virtual="topnav.html"-->    
     <!-- Wrapper -->
       <div id="wrapper" class="divided">
 
@@ -187,13 +173,7 @@
 
       </div>
 
-    <!-- Scripts TODO Should be include not in page-->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.scrollex.min.js"></script>
-      <script src="assets/js/jquery.scrolly.min.js"></script>
-      <script src="assets/js/skel.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <script src="assets/js/main.js"></script>
+    <!--#include virtual="scripts.html"-->
       <script>
         $(function() {
           $('#navHome').addClass("selected");

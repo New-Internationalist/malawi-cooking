@@ -7,20 +7,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <!--TODO: Should be included not in text of pages-->
-    <nav id="topNav">
-      <div id="logo">
-        <a href="https://newint.org"><img src="images/logo-34px.png" alt="New Internationalist" style="width:100%"/></a>
-      </div>
-      <ul>
-        <li><a href="index.html" id="navHome">Home</a></li>
-        <li><a href="womensburden.html#video-intro" id="navBurden">A woman's burden</a></li>
-        <li><a href="killerKitchen.html" id="navKiller">Killer in the kitchen</a></li>
-        <li><a href="/" id="navCommunity">Community</a></li>
-        <li><a href="/" id="navMillionairre">The millionairre</a></li>
-        <li><a href="/" id="navGold">Black gold</a></li>
-      </ul>
-    </nav>
+    <!--#include virtual="./topnav.html" -->    
 
     <!-- Wrapper -->
       <div id="wrapper" class="divided">
@@ -31,7 +18,7 @@
               <video autoplay id="burdenVid" src="videos/burden.mp4" class="fullwidth-video" style="height:100%"></video>
             </div>
             <div class="content">
-              <ul class="actions" style="padding-top:75%">
+              <ul class="actions" style="padding-top:72%">
                 <li><a href="#womansB" class="smooth-scroll icon fa-arrow-down" onclick='document.getElementById("burdenVid").pause();'></a></li>
               </ul>
             </div>
@@ -48,7 +35,7 @@
               <p>Sometimes, even 10-year-old girls become responsible for households energy needs – a full time job that needs to be balanced with education, and often child care of siblings.  Collecting the wood, hauling water, growing food and cooking it takes all their time. Each meal of the day must be freshly cooked – a whole lot of work with no electricity available.</p> 
               <p>While firewood becomes scarcer and scarcer, the burden of wood collection has even increased. Charity Gogoda from a village close to the Lujeri Tea Plantation in Mulanje confirms: ‘A bundle of firewood lasts only a few days, and then we have to go out again’. And every year Charity and her friends have to walk</p>
               <ul class="actions vertical">
-                <li><a href="index.html#burden" class="smooth-scroll button icon fa-arrow-left">Main feature</a></li>
+                <li><a href="/#burden" class="smooth-scroll button icon fa-arrow-left">Main feature</a></li>
               </ul>
             </div>
             <div class="image">
@@ -72,13 +59,7 @@
 
       </div>
 
-    <!-- Scripts TODO Should be include not in page-->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.scrollex.min.js"></script>
-      <script src="assets/js/jquery.scrolly.min.js"></script>
-      <script src="assets/js/skel.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <script src="assets/js/main.js"></script>
+    <!--#include virtual="scripts.html"-->
       <script>
         $(function() {
           $('#navBurden').addClass("selected");
