@@ -8416,6 +8416,8 @@
         box-shadow: none !important;
       }
 /* newint mods */
+.fullwidth-inner {width:100%}
+
 .fullwidth-video {
   object-fit:cover;
   -moz-object-fit:cover;
@@ -8431,6 +8433,14 @@
 #topNav li {display:inline-block; float:left; padding-top:3px}
 #topNav a {text-decoration:none; padding:2px}
 #topNav .selected {background-color:#ccc; border-radius:5px}
+
+@media screen and (min-width: 1024px) {
+  .fullwidth-inner {width:150%; margin-left:-25%}
+}
+
+@media screen and (min-width: 1280px) {
+  .fullwidth-inner {width:190%; margin-left:-45%}
+}
 
 @media screen and (max-width: 736px) {
   #topNav {height:5em;}
