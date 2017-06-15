@@ -8439,3 +8439,8 @@
 @media screen and (max-width: 480px) {
   #topNav {height:7em;}
 }
+
+
+.full-opacity {
+  opacity: 1 !important;
+}
