@@ -2032,7 +2032,7 @@
     input[type="button"].special,
     button.special,
     .button.special {
-      background-color: #000000;
+      background-color: #f3a923;
       box-shadow: none;
       color: #ffffff !important;
     }
@@ -2042,7 +2042,7 @@
       input[type="button"].special:hover,
       button.special:hover,
       .button.special:hover {
-        background-color: #47D3E5;
+        background-color: #6ecad0;
       }
 
       input[type="submit"].special:active,
@@ -8424,6 +8424,7 @@
   -ms-object-fit:cover;
   -webkit-object-fit:cover;
   width:100%;
+  height:100vh;
 }
 
 #topNav {position:fixed; width:100%; font-size: 0.7em; height:2.1em; z-index: 99;background-color:#fff;}
@@ -8431,8 +8432,9 @@
 #sharing {float:right;margin-right:1em}
 #topNav ul {list-style-type:none;margin-left:9em}
 #topNav li {display:inline-block; float:left; padding-top:3px}
-#topNav a {text-decoration:none; padding:2px}
-#topNav .selected {background-color:#ccc; border-radius:5px}
+#topNav a {text-decoration:none; padding:3px}
+#topNav .selected {background-color:#f3a923; border-radius:5px}
+#topnav .selected a {color: #999}
 
 @media screen and (min-width: 1024px) {
   .fullwidth-inner {width:150%; margin-left:-25%}
@@ -8457,4 +8459,10 @@
 
 .text-small {
   font-size:0.78em;
+}
+
+.caption-right {
+  position:absolute !important;
+  right: 10px;
+  bottom: 10px;
 }
