@@ -13,3 +13,12 @@
         ga('create', 'UA-92317-26', 'auto');
         ga('send', 'pageview');
       </script>
+      <script>
+        window['optimizely'] = window['optimizely'] || [];
+        $("#enewsSignupBtn").bind("mousedown", function() {
+          window.optimizely.push(["trackEvent", "enewsOrMagSubClicked"]);
+        });
+        $("#magSubBtn").bind("mousedown", function() {
+          window.optimizely.push(["trackEvent", "enewsOrMagSubClicked"]);
+        });
+      </script>
