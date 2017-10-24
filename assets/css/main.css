@@ -8427,37 +8427,6 @@
   height:100vh;
 }
 
-#topNav {position:fixed; width:100%; font-size: 0.7em; height:2.1em; z-index: 99;background-color:#fff;}
-#logo {float:left; z-index:99;position:fixed;width:10em;padding-top:4px}
-#sharing {float:right;margin-right:1em}
-#topNav ul {list-style-type:none;margin-left:9em}
-#topNav li {display:inline-block; float:left; padding-top:3px}
-#topNav a {text-decoration:none; padding:3px}
-#topNav .selected {color:#fff; background-color:#d03022; border-radius:5px}
-#topNav #subslink {float:right; color:#fff}
-#topNav #subslink a {background-color:#f3a923; color:#fff; border-radius:5px}
-#topNav #subslink a:hover {color:#fff}
-
-
-@media screen and (min-width: 1024px) {
-  .fullwidth-inner {width:150%; margin-left:-25%}
-}
-
-@media screen and (min-width: 1280px) {
-  .fullwidth-inner {width:190%; margin-left:-45%}
-}
-
-@media screen and (max-width: 736px) {
-  #topNav {height:5em;}
-}
-
-@media screen and (max-width: 480px) {
-  #topNav {height:7em;}
-  #sharing {position:absolute;right:0;top:5em}
-  #topNav #subslink {position:absolute; left:2px;top:3em}
-}
-
-
 .full-opacity {
   opacity: 1 !important;
 }
@@ -8470,4 +8439,33 @@
   position:absolute !important;
   right: 10px;
   bottom: 10px;
+}
+
+#topNav {position:fixed; width:100%; font-size: 0.7em; height:2.1em; z-index: 99;background-color:#fff;}
+#logo {float:left; z-index:99;position:fixed;width:10em;padding-top:4px}
+#sharing {float:right;margin-right:1em}
+#topNav ul {list-style-type:none;margin-left:9em}
+#topNav li {display:inline-block; float:left; padding-top:3px}
+#topNav a {text-decoration:none; padding:3px}
+#topNav .selected {color:#fff; background-color:#d03022; border-radius:5px}
+#topNav #subslink {float:right; color:#fff}
+#topNav #subslink a {background-color:#f3a923; color:#fff; border-radius:5px}
+#topNav #subslink a:hover {color:#fff}
+
+@media screen and (min-width: 1024px) {
+  .fullwidth-inner {width:150%; margin-left:-25%}
+}
+
+@media screen and (min-width: 1280px) {
+  .fullwidth-inner {width:190%; margin-left:-45%}
+}
+
+@media screen and (max-width: 880px) {
+  #topNav {height:5em;}
+  #topNav #subslink {position:absolute; left:2px;top:3em}
+}
+
+@media screen and (max-width: 480px) {
+  #topNav {height:7em;}
+  #sharing {position:absolute;right:0;top:5em}
 }
