@@ -23,7 +23,7 @@ function inViewport(element) {
 // Sharing
 function twitterShare() {
   var url = encodeURIComponent(document.location.href);
-  document.location.href="https://twitter.com/intent/tweet?via=newint&related=newint&text=Smoke+and+mirrors+cooking+in+Malawi+" + url;
+  document.location.href="https://twitter.com/intent/tweet?related=newint&text=Smoke+and+mirrors:+Inside+Malawi’s+untold+health+and+environmental+crisis&url=" + url + "&via=newint";
 }
 function fbShare() {
   var url = encodeURIComponent(document.location.href);
